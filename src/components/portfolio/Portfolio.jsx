@@ -12,69 +12,7 @@ import ListPortfolio from "./listPortfolio";
 
 export const Portfolio = () => {
   const portfolioContent = [
-    {
-      image : img1,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 1,
-      title:'Project 1'
-    },
-    {
-      image : img2,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 2,
-      title:'Project 2'
-    },
-    {
-      image : img3,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 4,
-      title:'Project 4'
-    },
-    {
-      image : img5,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 5,
-      title:'Project 5'
-    },
-    {
-      image : img6,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 6,
-      title:'Project 6'
-    },
-      {
-      image : img7,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 7,
-      title:'Project 7'
-    },
-    {
-      image : img8,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 8,
-      title:'Project 8'
-    },
-    {
-      image : img9,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 9,
-      title:'Project 9'
-    },
-    {
-      image : img1,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 10,
-      title:'Project 10'
-    },
+   
   ]
   return (
     <section id="portfolio">
