@@ -1,11 +1,8 @@
 import React from "react";
-import "./testimonials.css";
-import IMG from "../../assets/3.jpg";
-import AV1 from "../../assets/3.jpg";
-import AV2 from "../../assets/3.jpg";
-import AV3 from "../../assets/3.jpg";
-import AV4 from "../../assets/3.jpg";
-import AV5 from "../../assets/3.jpg";
+import "../../components/testimonial/testimonials.css";
+import IMG from "../../assets/3.jpeg";
+import AV1 from "../../assets/4.jpg";
+import AV2 from "../../assets/5.jpeg";
 
 // import Swiper core and required modules
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper';
@@ -19,6 +16,28 @@ import 'swiper/css/pagination';
 
 export const Testimonial = () => {
   const testimonials = [
+    {
+      id: 3,
+      testimonial:
+        "Wow good , your work is very simple and complet in the application",
+      avatar: 3,
+      Cname: "Sa'a Artur Civil Engineer",
+    },
+      
+    {
+      id: 1,
+      testimonial:
+        "Nice  .courage",
+      avatar: 4,
+      Cname: "Lambe Yubuin CEO of Quick Step Travels",
+    },
+    {
+      id: 2,
+      testimonial:
+        "A good graphic designer. very attractive i love it.",
+      avatar: 5,
+      Cname: "Cedrick Kiengo CEO of CK digital academy",
+    },
     
   ];
   return (

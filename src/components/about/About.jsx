@@ -13,7 +13,7 @@ const About = () => {
         <div className="container about__container">
           <div className="about__me">
             <div className="about__me__image">
-              <img src={moi} alt="Brown " />
+              <img src={moi} alt="Keanli " />
             </div>
           </div>
           <div className="about__me__content">
@@ -31,12 +31,16 @@ const About = () => {
               <article className="about__card">
                 <VscFolderLibrary className="about__icon" />
                 <h5>Projects</h5>
-                <small>2 Completed</small>
+                <small>4</small>
               </article>
             </div>
             <p>
               I am a young software engineer student trained at the Faculty of
               Engineering and Technology(FET) of the University of Buea it's my second year.
+              I express myself in the both language english and french 
+              I am curently working on many innovative projects like:
+              'Web app', 'An intelligent daily scheduler', and much more.
+              I use technologies like python, java, mysql, javascript, react and many others.
             </p>
             <a href="#contact" className="btn btn-primary">
               Let's talk

@@ -38,6 +38,20 @@
     font-size: .8rem;
 }
 
+.btn-me{
+    position: absolute;  
+    right: 5px; 
+    background: none;
+    border: 0px;
+}
+/* dialog{
+    position: absolute;
+    margin: auto; 
+    top: fixed;
+    background: rgba(6,9,6,0.8);
+    border-w: ;
+} */
+
 form{
     display: flex;
     flex-direction: column;
