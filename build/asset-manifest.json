@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4932f920.css",
+    "main.js": "./static/js/main.03df66f8.js",
+    "static/media/2.jpg": "./static/media/2.5ca5f4cb99fb50d49eba.jpg",
+    "static/media/Keanli-sommary.docx": "./static/media/Keanli-sommary.fcae30b54f616698e776.docx",
+    "index.html": "./index.html",
+    "main.4932f920.css.map": "./static/css/main.4932f920.css.map",
+    "main.03df66f8.js.map": "./static/js/main.03df66f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4932f920.css",
+    "static/js/main.03df66f8.js"
+  ]
+}
