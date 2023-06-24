@@ -1,49 +1,61 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 import "./portfolio.css";
+// import img1 from "../../assets/port.PNG";
 
-import ListPortfolio from "./listPortfolio";
+const Portfolio = () => {
 
-export const Portfolio = () => {
-  const portfolioContent = [
-   
-  ]
+  const[data, setData] = useState([]);
+
+  useEffect(()=> {
+    axios.get("http://localhost:8000/api/portfolio").then(response => {
+      const formattedData = response.data.data.map(item => ({
+        id: item._id,
+        image: item.image,
+        title: item.title,
+        github: item.github,
+        demo: item.demo
+      }));
+      setData(formattedData)
+    }).catch(error => {
+      console.log("Error fetching portfolio data:", error);
+    })
+  }, [])
+
   return (
     <section id="portfolio">
       <h5>My recent work</h5>
       <h2>Portfolio</h2>
-<ListPortfolio/>  
       <div className="container portfolio__container">
       {
-        portfolioContent.map((content, id) =>{
-          return (
+        data.map(({id, image, title, github, demo}) =>(
+          // return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item__image">
-                <img src={content.image} alt=" one" className="portImage" />
+                <img src={image} alt={title} className="portImage" />
               </div>
-              <h3> {content.title} </h3>
+              <h3> {title} </h3>
               <div className="portfolio__item__cta">
                 <a
-                  href={content.github}
+                  href={github}
                   className="btn"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Github
                 </a>
                 <a
-                  href={content.demo}
+                  href={demo}
                   className="btn btn-primary"
                   target="blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   Live Demo
                 </a>
               </div>
             </article>
-          );
-        }
-        
-        )
+          // );
+        ))
       }
       </div>
     </section>

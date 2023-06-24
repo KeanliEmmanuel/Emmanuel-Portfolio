@@ -4,9 +4,10 @@ import Navbar from './components/navbar/Navbar'
 import About from './components/about/About' 
 import Experience from './components/experience/Experience'
 import Services from './components/services/Services'
-import Testimonial from './components/testimonial/Testimonial'
+import Testimonial from './components/testimonial/testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Portfolio from './components/portfolio/Portfolio';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <About/>
       <Experience/>
       <Services/>
-    
+      <Portfolio/>
       <Testimonial/>
       <Contact/>
       <Footer/>
